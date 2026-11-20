@@ -1,0 +1,30 @@
+{
+  "ticker": "RELIANCE.NS",
+  "feature_mode": "close_only",
+  "lookback": 60,
+  "target": "next_close",
+  "validation_mae_by_feature_mode": {
+    "close_only": {
+      "mae": 29.513274310919737,
+      "rmse": 36.28504143779225
+    },
+    "52_week_distances": {
+      "mae": 37.111616630044615,
+      "rmse": 45.47467357952947
+    }
+  },
+  "test": {
+    "lstm": {
+      "mae": 28.587327611726895,
+      "rmse": 35.00003026760718
+    },
+    "naive_baseline": {
+      "mae": 14.176975865517893,
+      "rmse": 20.062112026622387
+    },
+    "model_beats_baseline": false,
+    "start_date": "2025-11-20 00:00:00+05:30",
+    "end_date": "2026-11-20 00:00:00+05:30",
+    "rows": 248
+  }
+}
